@@ -1,0 +1,18 @@
+def isPrime(n):
+    divider = 2
+    while (divider < n):
+        if(n % divider == 0):
+            return False
+        divider += 1
+    return True
+
+result = 0
+counter = 0
+n = 2
+while (counter < 1000):
+    if isPrime(n):
+        result += n
+        counter += 1
+    n += 1
+
+print result
